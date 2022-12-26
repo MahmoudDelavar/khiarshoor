@@ -5,23 +5,24 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-
+import styles from "../../../styles/navbar.module.css";
 //========================================================
 function Navigationbar() {
   return (
     <Navbar
-      bg="dark"
-      variant="dark"
+      // bg="dark"
+      // variant="dark"
       expand="md"
-      className="text-danger"
-      style={{ marginTop: "9vh" }}
+      className={styles.nav}
     >
       <Container fluid>
-        <Navbar.Brand href="/">
-          <Image src="/logo1.png" alt="faild-logo" width={50} height={50} />
-          <span style={{ color: "#80a452" }}> KHARSH</span>
-          <span style={{ color: "#ffc600" }}>OO</span>
-          <span style={{ color: "#80a452" }}>R.com</span>
+        <Navbar.Brand>
+          <Link href="/">
+            <Image src="/logo1.png" alt="faild-logo" width={50} height={50} />
+            <span style={{ color: "#80a452" }}> KHARSH</span>
+            <span style={{ color: "#ffc600" }}>OO</span>
+            <span style={{ color: "#80a452" }}>R.com</span>{" "}
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="titile" />
         <Navbar.Collapse id="titile">

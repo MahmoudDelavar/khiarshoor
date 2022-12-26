@@ -1,0 +1,12 @@
+.sliderBox {
+  /* direction: rtl; */
+  width: 92vw;
+  margin: auto;
+  /* position: relative;
+  bottom: 0; */
+  background-color: #a182544d;
+}
+
+.sliderPic {
+  border-radius: 50%;
+}

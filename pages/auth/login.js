@@ -12,6 +12,8 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { fechLogin } from "../../state_management/slices/user-slices/login";
 import AuthAlerts from "../../components/util/views/auth-alerts";
+import Link from "../../components/util/views/costumLink";
+import CooperationSlider from "../../components/util/views/CooperationSlider";
 
 //================================================================
 
@@ -65,7 +67,7 @@ const Login = () => {
 
   return (
     <>
-      <Col xxl={6} xl={8} lg={10} md={11} className={styles.formBox}>
+      <Col xxl={6} xl={8} lg={6} md={8} className="formBox">
         {/*---------Alert box---------*/}
         <AuthAlerts
           successMsg={successMsg}
@@ -93,11 +95,18 @@ const Login = () => {
             icon={<BsFillKeyFill />}
           />
 
-          <div className="d-grid mt-2" gap={2}>
-            <Button variant="outline-primary" type="submit">
-              ورود{" "}
-            </Button>
-          </div>
+          <Row className="align-items-center">
+            <Col>
+              <div className="d-grid mt-2" gap={2}>
+                <Button variant="outline-success" type="submit">
+                  ورود{" "}
+                </Button>{" "}
+              </div>
+            </Col>
+            <Col>
+              <Link href={"/auth/register"}> ثبت نام</Link>
+            </Col>
+          </Row>
         </Form>
       </Col>
     </>
