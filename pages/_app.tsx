@@ -6,9 +6,6 @@ import Head from "next/head";
 import { Provider } from "react-redux";
 import store from "../state_management/store";
 import Layout from "../components/util/views/layout";
-import Navigationbar from "../components/util/views/nabar";
-import Link from "next/link";
-
 //====================================================
 
 export default function App({ Component, pageProps }: AppProps) {

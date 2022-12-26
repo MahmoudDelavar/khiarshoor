@@ -2,9 +2,9 @@
   /* direction: rtl; */
   width: 92vw;
   margin: auto;
-  /* position: relative;
-  bottom: 0; */
-  background-color: #a182544d;
+  position: relative;
+  top: 15px;
+  background-color: #1c4d1f34;
 }
 
 .sliderPic {
