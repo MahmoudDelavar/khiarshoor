@@ -18,25 +18,25 @@ function Navigationbar() {
     >
       <Container fluid>
         <Navbar.Brand href="/">
-          <Image src="/logo64.png" alt="faild-logo" width={40} height={40} />
-          <span style={{ color: "orange" }}> oreangetube.ir</span>
+          <Image src="/logo1.png" alt="faild-logo" width={50} height={50} />
+          <span style={{ color: "#80a452" }}> KHARSH</span>
+          <span style={{ color: "#ffc600" }}>OO</span>
+          <span style={{ color: "#80a452" }}>R.com</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="titile" />
         <Navbar.Collapse id="titile">
           <Nav className="me-auto " style={{ maxHeight: "100px" }} navbarScroll>
-            <Link href="/">videos</Link>
-            <Link href="/sunscribtions">subscibetions</Link>
-            <Link href="/video/upload">upload</Link>
-            <Link href="/auth/login">login</Link>
+            <Link href="/video/upload">درباره ما</Link>
+            <Link href="/auth/login">ورود</Link>
           </Nav>
           <Form className="d-flex">
             <Form.Control
               type="search"
-              placeholder="Search"
+              placeholder="دنبال چی میگردی؟"
               className="me-4"
               aria-label="Search"
             />
-            <Button variant="outline-danger">Search</Button>
+            <Button variant="outline-success">جستجو</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
