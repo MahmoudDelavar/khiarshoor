@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 import Banner from "../components/util/views/banner";
 import { Container, Row, Col } from "react-bootstrap";
 import CooperationSlider from "../components/util/views/CooperationSlider";
-import Carousel from "../components/util/views/carousel";
+
 //==========================================================
 export default function Home() {
   return (

@@ -13,7 +13,7 @@ import { useSelector } from "react-redux";
 import axios from "axios";
 import { dev_phase } from "../../next.config";
 import Image from "next/image";
-
+import Spinner from "react-bootstrap/Spinner";
 //===========================================
 const Upload = () => {
   //-----------------states and initial variables-----------------
